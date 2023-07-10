@@ -1,16 +1,16 @@
 const Challenge = () => {
-    // const somar = () => {
-    //     let n1 = <h1> coloque um numero 1: <input type="Number" /></h1>
-    //     let n2 = <h1> coloque um numero 2: <input type="Number" /></h1>
-    //     return n1 + n2
-    // }
+    const n1 = 2
+    const n2 = 4
+    const total = n1 + n2
 
-    // let n1 = 9
-    // let n2 = 3
-    // let somar = n1 + n2
+    const somar = () => {
+        console.log(`O valor total é ${total}`)
+    }
+
     return (
         <div>
-            <button>Somar</button>
+            <p>Os números escolhidos são {n1} e {n2}</p>
+            <button onClick={somar}>Somar</button>
         </div>
     )
 }
