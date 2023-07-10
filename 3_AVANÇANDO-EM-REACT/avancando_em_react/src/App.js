@@ -1,5 +1,6 @@
 // import logo from './logo.svg';
 import './App.css';
+import City from "./assets/citynight.jpg";
 
 function App() {
   return (
@@ -22,6 +23,10 @@ function App() {
       {/* Imagem em public */}
       <div>
         <img src="/montanha.jpg" alt="Paisagem" />
+      </div>
+      {/* Imagem em asset */}
+      <div>
+        <img src={City} alt="Cidade Nortuna" />
       </div>
     </div>
   );
