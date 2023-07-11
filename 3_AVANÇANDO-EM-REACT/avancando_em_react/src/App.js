@@ -1,6 +1,7 @@
 // import logo from './logo.svg';
 import './App.css';
 import City from "./assets/citynight.jpg";
+import ConditionalRender from './components/ConditionalRender';
 import ListRender from './components/ListRender';
 import ManageData from './components/ManageData';
 
@@ -32,6 +33,7 @@ function App() {
       </div>
       <ManageData />
       <ListRender />
+      <ConditionalRender />
     </div>
   );
 }
