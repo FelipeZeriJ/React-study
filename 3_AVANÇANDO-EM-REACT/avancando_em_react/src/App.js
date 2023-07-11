@@ -1,6 +1,7 @@
 // import logo from './logo.svg';
 import './App.css';
 import City from "./assets/citynight.jpg";
+import ListRender from './components/ListRender';
 import ManageData from './components/ManageData';
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
         <img src={City} alt="Cidade Nortuna" />
       </div>
       <ManageData />
+      <ListRender />
     </div>
   );
 }
