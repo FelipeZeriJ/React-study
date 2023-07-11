@@ -1,6 +1,7 @@
 // import logo from './logo.svg';
 import './App.css';
 import City from "./assets/citynight.jpg";
+import ManageData from './components/ManageData';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
       <div>
         <img src={City} alt="Cidade Nortuna" />
       </div>
+      <ManageData />
     </div>
   );
 }
