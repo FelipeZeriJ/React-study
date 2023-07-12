@@ -8,6 +8,7 @@ import ManageData from './components/ManageData';
 import ShowUserName from './components/ShowUserName';
 import CarDetails from './components/CarDetails';
 import Fragments from './components/Fragments';
+import Container from './components/Container';
 
 function App() {
   const varname = "Felipe var"
@@ -72,6 +73,9 @@ function App() {
 
       {/* Fragment */}
       <Fragments propFragment={"teste"}/>
+
+      {/* Container */}
+      <Container />
 
     </div>
   );
