@@ -1,11 +1,15 @@
 // import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
 import City from "./assets/citynight.jpg";
 import ConditionalRender from './components/ConditionalRender';
 import ListRender from './components/ListRender';
 import ManageData from './components/ManageData';
+import ShowUserName from './components/ShowUserName';
 
 function App() {
+  const varname = "Felipe var"
+  const [userName] = useState("Felipe State")
   return (
     <div className="App">
       {/* <header className="App-header">
@@ -34,6 +38,9 @@ function App() {
       <ManageData />
       <ListRender />
       <ConditionalRender />
+      <ShowUserName name={userName}/>
+      <ShowUserName name={varname}/>
+      <ShowUserName name="Felipe normal"/>
     </div>
   );
 }
