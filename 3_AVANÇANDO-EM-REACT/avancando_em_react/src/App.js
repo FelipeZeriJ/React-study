@@ -7,6 +7,7 @@ import ListRender from './components/ListRender';
 import ManageData from './components/ManageData';
 import ShowUserName from './components/ShowUserName';
 import CarDetails from './components/CarDetails';
+import Fragments from './components/Fragments';
 
 function App() {
   const varname = "Felipe var"
@@ -43,17 +44,23 @@ function App() {
         <img src={City} alt="Cidade Nortuna" />
       </div>
       <ManageData />
+
       <ListRender />
+
       <ConditionalRender />
+
       {/* Props */}
       <ShowUserName name={userName}/>
       <ShowUserName name={varname}/>
       <ShowUserName name="Felipe normal"/>
+
       {/* Destructuring */}
       <CarDetails brand="VW" km={1000} color="Branco" newCar={false}/>
+
       {/* Reaproveitando */}
       <CarDetails brand="Ford" color="Vermelho" km={0} newCar={true}/>
       <CarDetails brand="Fiat" color="Azul" km={100} newCar={false}/>
+
       {/* Loop em array de objetos */}
       {cars.map((car) => (
         <CarDetails 
@@ -62,6 +69,10 @@ function App() {
         km={car.km} 
         newCar={car.newCar} />
       ))}
+
+      {/* Fragment */}
+      <Fragments propFragment={"teste"}/>
+
     </div>
   );
 }
