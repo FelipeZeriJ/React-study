@@ -75,7 +75,12 @@ function App() {
       <Fragments propFragment={"teste"}/>
 
       {/* Container */}
-      <Container />
+      <Container myValue="testing">
+        <p>E este é o conteúdo</p>
+      </Container>
+      <Container myValue="testing 2">
+        <p>E este é o conteúdo</p>
+      </Container>
 
     </div>
   );

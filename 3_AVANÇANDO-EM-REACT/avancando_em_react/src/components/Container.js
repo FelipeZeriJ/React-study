@@ -1,7 +1,9 @@
-const Container = () => {
+const Container = ({ children, myValue }) => {
     return (
         <div>
-            <h1>Container</h1>
+            <h1>Este é o título do container</h1>
+            {children}
+            <p>O valor é: {myValue}</p>
         </div>
     )
 }
