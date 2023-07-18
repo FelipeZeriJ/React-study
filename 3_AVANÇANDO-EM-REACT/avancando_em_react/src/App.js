@@ -12,6 +12,7 @@ import Container from './components/Container';
 import ExecuteFunction from './components/ExecuteFunction';
 import Message from './components/Message';
 import ChangeMessageState from './components/ChangeMessageState';
+import UserDetails from './components/UserDetails';
 
 function App() {
   const varname = "Felipe var"
@@ -103,6 +104,9 @@ function App() {
       {/* State Lift */}
       <Message msg={message}/>
       <ChangeMessageState handleMessage={handleMessage}/>
+
+      {/* Sessão 3: Desafio 4 */}
+      <UserDetails />
 
     </div>
   );
