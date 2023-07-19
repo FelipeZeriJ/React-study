@@ -34,6 +34,12 @@ function App() {
     setMessage(msg)
   }
 
+  const pessoas = [
+    { id: 1, nome: "Felipe Zeri Jahnel", idade: 22, profissao: "Front-End Dev. Junior"},
+    { id: 2, nome: "Marcos Santos", idade: 22, profissao: "Back-End Dev. Junior/Pleno"},
+    { id: 3, nome: "João Ressel", idade: 22, profissao: "Front-End Dev. Junior"},
+  ]
+
   return (
     <div className="App">
       {/* <header className="App-header">
@@ -106,7 +112,14 @@ function App() {
       <ChangeMessageState handleMessage={handleMessage}/>
 
       {/* Sessão 3: Desafio 4 */}
-      <UserDetails />
+      {/* <UserDetails /> */}
+      {pessoas.map((pessoa) => (
+        <UserDetails
+        key={pessoa.id}
+        nome={pessoa.nome}
+        idade={pessoa.idade}
+        profissao={pessoa.profissao} />
+      ))}
 
     </div>
   );
