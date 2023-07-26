@@ -4,7 +4,7 @@ const MyComponent = () => {
     return (
         <div>
             <h1>CSS de componente</h1>
-            <p>Este é o parágrafo do componente</p>
+            <p>Este é o parágrafo do componentes</p>
             <p className="my-comp-paragraph">Este é outro parágrafo do app.js</p>
         </div>
     )
