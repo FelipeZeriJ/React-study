@@ -14,10 +14,17 @@ const MyForm = () => {
     console.log(name)
     console.log(email)
 
+    const handleSubmit = (event) => {
+        event.preventDefault() // Formulario não recarrega a pagina mais
+        console.log('Enviando o Formulário')
+        console.log(name, email)
+    }
+
     return (
         <div>
+            {/* 5 - Envio de Form */}
             {/* 1 - Criação de Forms */}
-            <form>
+            <form onSubmit={handleSubmit}>
                 <div>
                     <label htmlFor="name">Nome:</label>
                     <input 
@@ -30,6 +37,7 @@ const MyForm = () => {
                 {/* 2 - Label envolvendo input */}
                 <label>
                     <span>E-mail:</span>
+                    {/* 4 - Simplificação de Manipulação de state */}
                     <input type="email" name="email" placeholder="Digite o seu e-mail" 
                     onChange={(e) => setEmail(e.target.value)}
                     />
