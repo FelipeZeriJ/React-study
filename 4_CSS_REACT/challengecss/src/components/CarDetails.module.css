@@ -1,0 +1,17 @@
+/* CarDetails.module.css */
+.my_car_details {
+    color: red;
+    background: #333;
+}
+.my_car_modelo {
+    color: green;
+    background: #333;
+}
+.my_car_km {
+    color: royalblue;
+    background: #333;
+}
+.my_car_cor {
+    color: blueviolet;
+    background: #333;
+}
