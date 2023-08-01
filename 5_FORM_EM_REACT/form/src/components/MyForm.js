@@ -19,6 +19,13 @@ const MyForm = ({user}) => {
         event.preventDefault() // Formulario não recarrega a pagina mais
         console.log('Enviando o Formulário')
         console.log(name, email)
+
+        // validação
+        // envio
+
+        // 7 - Limpar Form
+        setName("");
+        setEmail("");
     }
 
     return (
