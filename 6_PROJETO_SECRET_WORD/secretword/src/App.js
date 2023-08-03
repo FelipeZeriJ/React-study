@@ -71,8 +71,32 @@ function App() {
 
   // Process the lette input
   const verifyLetter = (letter) => {
-    console.log(letter);
-  }
+    const normalizedLetter = letter.toLowerCase();
+
+    // Check if letter has already been utilized
+    if (
+      guessedLetters.includes(normalizedLetter) ||
+      wrongLetters.includes(normalizedLetter)
+    ) {
+      return;
+    }
+
+    // Push guessed letter or remove a guess
+    if (letter.includes(normalizedLetter)) {
+      setGuessedLetters((actualGuessedLetters) => [
+        ...actualGuessedLetters, 
+        normalizedLetter,
+      ]);
+    } else {
+      SetWrongLetters((actualWrongLetters) => [
+        ...actualWrongLetters,
+        normalizedLetter,
+      ])
+    }
+  };
+
+  console.log(guessedLetters);
+  console.log(wrongLetters);
 
   // Restarts the Game
   const retry = () => {
