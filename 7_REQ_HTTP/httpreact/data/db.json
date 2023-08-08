@@ -24,6 +24,11 @@
       "name": "aaa",
       "price": "123",
       "id": 5
+    },
+    {
+      "name": "Educação",
+      "price": "112",
+      "id": 6
     }
   ]
 }
