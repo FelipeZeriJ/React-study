@@ -11,7 +11,7 @@ function App() {
   const [products, setProducts] = useState([])
 
   // 4 - Custom
-  const { data: items } = useFetch(url);
+  const { data: items, httpConfig, loading } = useFetch(url);
 
   const [name, setName] = useState("")
   const [price, setPrice] = useState("")
@@ -38,19 +38,22 @@ function App() {
       price,
     };
 
-    const res = await fetch(url, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(product),
-    });
+    // const res = await fetch(url, {
+    //   method: "POST",
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //   },
+    //   body: JSON.stringify(product),
+    // });
 
-    // 3 - Carregamento dinâmico
-    const addedProduct = await res.json();
+    // // 3 - Carregamento dinâmico
+    // const addedProduct = await res.json();
 
-    setProducts((prevProducts) => [...prevProducts, addedProduct])
+    // setProducts((prevProducts) => [...prevProducts, addedProduct])
 
+    // 5 - Refatorando Post
+    httpConfig(product, "POST");
+    
     setName("");
     setPrice("");
   };
@@ -58,6 +61,8 @@ function App() {
   return (
     <div className="App">
       <h1>Lista de Produtos</h1>
+      {/* 6 - Loading */}
+      {loading && <p>Carregando dados...</p>}
       <ul>
         {items && items.map((product) => (
           <li key={product.id}>
