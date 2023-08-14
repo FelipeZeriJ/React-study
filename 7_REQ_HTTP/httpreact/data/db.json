@@ -1,79 +1,9 @@
 {
   "products": [
     {
-      "id": 1,
-      "name": "Camisa",
-      "price": 59.9
-    },
-    {
-      "id": 2,
-      "name": "Calça vermelha",
-      "price": 90
-    },
-    {
-      "id": 3,
-      "name": "Boné aba reta",
-      "price": 29.9
-    },
-    {
       "name": "Educação",
       "price": "12",
       "id": 4
-    },
-    {
-      "name": "aaa",
-      "price": "123",
-      "id": 5
-    },
-    {
-      "name": "Educação",
-      "price": "112",
-      "id": 6
-    },
-    {
-      "name": "Esporte",
-      "price": "123",
-      "id": 7
-    },
-    {
-      "name": "Educação",
-      "price": "112321",
-      "id": 8
-    },
-    {
-      "name": "qwe",
-      "price": "123",
-      "id": 9
-    },
-    {
-      "name": "qwe",
-      "price": "123",
-      "id": 10
-    },
-    {
-      "name": "wer",
-      "price": "23",
-      "id": 11
-    },
-    {
-      "name": "wer",
-      "price": "23",
-      "id": 12
-    },
-    {
-      "name": "we",
-      "price": "34",
-      "id": 13
-    },
-    {
-      "name": "we",
-      "price": "34",
-      "id": 14
-    },
-    {
-      "name": "uyu",
-      "price": "43",
-      "id": 15
     }
   ]
 }
