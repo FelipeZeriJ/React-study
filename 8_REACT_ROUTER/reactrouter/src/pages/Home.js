@@ -12,14 +12,17 @@ const Home = () => {
     return <div>
         <h1>Produtos</h1>
         {error && <p>{error}</p>}
-        <ul className="products">
+        <div className="products">
             {items && items.map(item => (
-                <li key={item.id}>
+                <div key={item.id}>
                     <h2>{item.name}</h2>
                     <p>R$: {item.price}</p>
-                </li>
+                    <button>
+                    <Link to={`/products/${item.id}`}>Detalhes</Link>
+                    </button>
+                </div>
             ))}
-        </ul>
+        </div>
     </div>
 }
 

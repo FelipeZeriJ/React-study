@@ -4,7 +4,7 @@
     flex-wrap: wrap;
 }
 
-.products li {
+.products div {
     border: 1px solid #f5f5f5;
     border-radius: 5px;
     padding: 10px;
