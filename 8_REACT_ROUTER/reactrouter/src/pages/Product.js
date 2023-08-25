@@ -13,6 +13,14 @@ const Product = () => {
     return (
         <>
           <p>ID do produto: {id}</p>
+          {error && <p>Ocorreu um erro...</p>}
+          {loading && <p>Carregando...</p>}
+          {product && (
+            <div>
+              <h1>{product.name}</h1>
+              <p>R${product.price}</p>
+            </div>
+          )}
         </>
     )
 }
