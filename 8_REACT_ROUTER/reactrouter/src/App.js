@@ -10,6 +10,8 @@ import Navbar from "./components/Navbar"
 import Home from './pages/Home'
 import About from './pages/About'
 import Product from "./pages/Product"
+import Info from "./pages/info"
+import NotFound from './pages/NotFound';
 
 
 function App() {
@@ -24,6 +26,10 @@ function App() {
           <Route path='/about' element={<About />}/>
           {/* 4 - Rota Dinamica */}
           <Route path ="/products/:id" element={<Product />}/>
+          {/* 6 - Nested Route */}
+          <Route path='/products/:id/info' element={<Info />} />
+          {/* 7 - No match Route */}
+          <Route path='*' element={<NotFound />}></Route>
         </Routes>
       </BrowserRouter>
     </div>
