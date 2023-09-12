@@ -17,6 +17,7 @@ const Home = () => {
                 <div key={item.id}>
                     <h2>{item.name}</h2>
                     <p>R$: {item.price}</p>
+                    {/* 4 - Rota Dinamica */}
                     <button>
                     <Link to={`/products/${item.id}`}>Detalhes</Link>
                     </button>

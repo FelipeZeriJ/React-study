@@ -1,17 +1,19 @@
 import './App.css';
 
 // 1 - config react router
-import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 // components
 import Navbar from "./components/Navbar"
+import SearchForm from "./components/SearchForm"
 
 // pages
 import Home from './pages/Home'
 import About from './pages/About'
 import Product from "./pages/Product"
 import Info from "./pages/info"
-import NotFound from './pages/NotFound';
+import NotFound from './pages/NotFound'
+import Search from './pages/Search';
 
 
 function App() {
@@ -19,17 +21,21 @@ function App() {
     <div className="App">
       <h1>React Router</h1>
       <BrowserRouter>
-      {/* 2 - Links com react router */}
-      <Navbar/>
+        {/* 2 - Links com react router */}
+        <Navbar />
+        {/* 9 - Search */}
+        <SearchForm />
         <Routes>
-          <Route path='/' element={<Home />}/>
-          <Route path='/about' element={<About />}/>
-          {/* 4 - Rota Dinamica */}
-          <Route path ="/products/:id" element={<Product />}/>
+          <Route path='/' element={<Home />} />
+          <Route path='/about' element={<About />} />
           {/* 6 - Nested Route */}
           <Route path='/products/:id/info' element={<Info />} />
+          {/* 4 - Rota Dinamica */}
+          <Route path="/products/:id" element={<Product />} />
+          {/* 9 - Search */}
+          <Route path="/search" element={<Search />} />
           {/* 7 - No match Route */}
-          <Route path='*' element={<NotFound />}></Route>
+          <Route path='*' element={<NotFound />} />
         </Routes>
       </BrowserRouter>
     </div>
